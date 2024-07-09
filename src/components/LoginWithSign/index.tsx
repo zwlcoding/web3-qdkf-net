@@ -17,6 +17,7 @@ const LoginWithSign = () => {
         console.log(result)
         fetch('https://api.qdkf.net/wallet-login', {
             method: 'POST',
+            mode: 'cors',
             headers: {
                 'Content-Type': 'application/json',
             },
