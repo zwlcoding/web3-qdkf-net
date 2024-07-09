@@ -1,6 +1,6 @@
 import type {ReactNode} from "react";
 import LangPicker from "../LangPicker";
-import {ConnectButton} from '@rainbow-me/rainbowkit';
+import LoginWithSign from "../LoginWithSign";
 
 type LayoutProps = {
     menu: ReactNode,
@@ -33,7 +33,7 @@ const Layout = ({menu, children, footer}:LayoutProps) => {
                         </ul>
                     </div>
                     <div className={'flex-none max-2'}>
-                        <ConnectButton/>
+                        <LoginWithSign/>
                     </div>
                 </div>
                 {children}

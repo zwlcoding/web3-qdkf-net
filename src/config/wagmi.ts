@@ -12,6 +12,7 @@ export const config = getDefaultConfig({
         [bsc.id]: http(`https://api.zan.top/node/v1/bsc/mainnet/052f670653874e699da79df7d57755bf`),
         [polygon.id]: http(`https://api.zan.top/node/v1/polygon/mainnet/052f670653874e699da79df7d57755bf`),
         [base.id]: http(`https://api.zan.top/node/v1/base/mainnet/052f670653874e699da79df7d57755bf`),
+        // [hardhat.id]: http(`http://127.0.0.1:8545/`)
     }
 
 });

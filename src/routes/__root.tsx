@@ -3,7 +3,6 @@ import { TanStackRouterDevtools } from '@tanstack/router-devtools'
 
 import Layout from '../components/Layout'
 import Menu from '../components/Menu'
-// import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export const Route = createRootRoute({

@@ -1,9 +1,10 @@
+import { useTranslation } from 'react-i18next';
 const Menu = () => {
+    const { t } = useTranslation();
     return (
         <>
-            <li><a href="#">菜单1</a></li>
-            <li><a href="#">菜单2</a></li>
-            <li><a href="#">菜单3</a></li>
+            <li><a href="/home">{t('menu_home')}</a></li>
+            <li><a href="/about">{t('menu_about')}</a></li>
         </>
     )
 }
