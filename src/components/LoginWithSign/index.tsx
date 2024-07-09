@@ -35,7 +35,7 @@ const LoginWithSign = () => {
                 setItem(data.data.token)
             })
             .catch((err) => {
-                console.log(err)
+                alert(err && err.message)
             })
     }
     return (

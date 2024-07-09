@@ -1,9 +1,12 @@
 import {createLazyFileRoute} from '@tanstack/react-router'
-// import {useAccount, useReadContract, useWriteContract} from "wagmi"
+import {useAccount} from "wagmi"
+import {useLocalStorage} from "react-use";
+
 // import { parseEther } from "viem";
 
 const Index = () => {
-    // const {address} = useAccount();
+    const {address} = useAccount();
+    const [jwt_token] = useLocalStorage('__ww_jwt_token');
     // const result = useReadContract({
     //     abi: [
     //         {
@@ -55,7 +58,8 @@ const Index = () => {
     return (
         <div>
             welcome home
-            {/*<h1>{address}</h1>*/}
+            <h1>{address}</h1>
+            <h2>{jwt_token as string}</h2>
             {/*<h2>NFT total: {result?.data?.toString()}</h2>*/}
 
             {/*<button className="btn" onClick={mintNFT}>*/}
